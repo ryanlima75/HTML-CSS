@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        /* height = altura
+            width = largura
+            */
+        div{
+            display: inline-block;
+            border-radius: 30px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            text-align: center;
+            height: 20px;
+            width: 120px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* 
+        SELETORES PERSONALIZADOS EM CSS
+        # = referente a ID
+        . = referente a CLASS
+        : = referente a PSEUDO-CLASS
+        :: = referente a PSEUDO-ELEMENT
+        > = referente a CHILDREN: filho de uma div
+
+           hover = quando eu apassar o mouse por cima
+           Símbolo de > significa que existe um filho dentro de uma div ex: um <p> dentro de uma div
+        */ 
+        div > p {
+            display: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: x-large;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+        }
+        div:hover{
+            height: 80%;
+            width: 75%;
+            background-color: blueviolet;
+        }
+        .img{
+            height: 80%;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">Opção 01 <p>Renascentismo. <br>
+    <Img class="img" src="https://laart.art.br/wp-content/uploads/2020/09/arterenascentista-capa.jpg"/><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam do loribus totam perspiciatis tempore laborum maiores recusandae sed velit, nesciunt enim quos repudiandae reiciendis! Aliquam commodi quibusdam delectus vitae earum.</p></div>
+<div id="d2">Opção 02 <p>Cubismo. <br>
+    <Img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYiYrCviCVE_Mb3POm0N1uNGiGCLYdxP4PA&s"/><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aspernatur a voluptatem necessitatibus itaque nobis consectetur officia quaerat nesciunt? Sint atque laboriosam ad ea vitae odit veniam impedit officia unde.</p></div>
+<div id="d3">Opção 03 <p>Abstrato. <br>
+    <Img class="img" src="https://conceitos.com/wp-content/uploads/cultura/Pensamento-Criativo.jpg"/><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores sunt exercitationem aut ratione sed cupiditate eveniet quas id non quam explicabo delectus quos rem rerum porro sit quod quia?</p></div>
+</body>
+</html>

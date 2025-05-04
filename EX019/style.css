@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+em HTML é id = em css é # (é único, só pode um elemento)
+em HTML é class = em css é . (são vários, podem existir várias classes)
+*/
+
+@font-face {
+    font-family: 'Athene';
+    src: url('fontes/Athene Voyage.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(196, 241, 128);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color:rgb(78, 119, 17);
+    text-align: center;
+    font-family: Athene;
+    text-align: center;
+    font-size: 40px;
+}
+h1#principal{
+    color:rgb(51, 85, 0);
+font-family: Athene;
+text-align: center;
+font-size: 50px;
+}
+h2{
+    color:rgb(49, 82, 0);
+    text-align: center;
+}
+.basico{
+ color: rgb(194, 0, 145);
+ font-family: 'Athene';
+}
+
+.intermediario{
+ color: chocolate;
+ font-family: 'Athene';
+}
+
+.avançado{
+ color: cadetblue;
+ font-family: 'Athene';
+}
